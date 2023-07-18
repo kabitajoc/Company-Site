@@ -116,16 +116,18 @@
   align-items: flex-start;
   gap: 75px;
 }
-.services {
+.Ourservices {
   background: #f9f9ff;
   max-width: 1440px;
   height: 602px;
   flex-shrink: 0;
+  /* background: #F9F9FF); */
 }
 .service-card {
   width: 1079px;
   height: 326px;
   flex-shrink: 0;
+  padding: 36px 16px;
 }
 .card {
   width: 333px;
