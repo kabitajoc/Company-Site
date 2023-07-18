@@ -1,5 +1,6 @@
 :root {
   --gradient-primary-bg: linear-gradient(#f76680, #57007b);
+  --border-pink: #f76680;
   --darkest-gray-900: #1a202c;
   --darker-gray-800: ;
   --lighter-gray-700: #4a5568;
@@ -11,6 +12,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+p {
+  /* font-family: Inter; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.023%;
+}
+h1 {
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 71px;
+}
+h2 {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 55px;
+}
+h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 136.523%;
 }
 .navbar {
   display: flex;
@@ -115,13 +141,27 @@
   max-width: 1440px;
   height: 602px;
   flex-shrink: 0;
-  /* background: #F9F9FF); */
+  /* align-items: center; */
+  margin: auto;
+}
+.Ourservices h2 {
+  color: var(--gray-gray-900, #1a202c);
+  width: 308px;
+  height: 41px;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 55px;
+  margin: auto;
 }
 .service-card {
   width: 1079px;
   height: 326px;
   flex-shrink: 0;
+  /* gap:40; */
   padding: 36px 16px;
+  margin: 160px 181px 116px 180px;
 }
 .card {
   display: flex;
@@ -131,8 +171,15 @@
   flex-shrink: 0;
   border-radius: 7px;
   background: #fafafa;
-
+  margin: 0px 40px;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.inner-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 38.5px 16px;
 }
 .card h4 {
   width: 271px;
@@ -146,6 +193,9 @@
   line-height: 136.523%;
 }
 .card-logo img {
-  border: 1px solid var(--gradient-primary-bg);
+  border: 1px solid linear-gradient(#f76680, #57007b);
   border-radius: 50%;
+}
+.inner-card {
+  
 }
