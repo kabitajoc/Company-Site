@@ -1,26 +1,26 @@
+:root {
+  --gradient-primary-bg: linear-gradient(#f76680, #57007b);
+  --darkest-gray-900: #1a202c;
+  --darker-gray-800: ;
+  --lighter-gray-700: #4a5568;
+  --lightest-gray-600: #718096;
+}
+/* linear-gradient(#161490, #7476ed, #e56f8c); */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .navbar {
-  /* display: flex;
-  justify-content: space-between;
-  
-  padding: 10px, 0px;
-  background-color: #fff;
-  box-shadow: 0px 4px 40px 0px #0000001a; */
   display: flex;
-  /* width: 1440px; */
   padding: 10px 25px;
   margin: auto;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 4px 40px 0px #0000001a;
 }
-/* .nav {
-  display: flex;
-} */
+
 .nav ul {
   list-style: none;
   display: flex;
@@ -41,12 +41,10 @@
   color: #4a5568;
 }
 .contact-btn button {
-  /* background: linear-gradient(#161490, #6675f7); */
   border-radius: 5px;
   background: linear-gradient(225deg, #6675f7 0%, #57007b 100%);
   color: white;
-  /* max-width: 74px;
-  max-height: 14px; */
+
   padding: 14px 25px;
   border-radius: 5px;
   font-size: 14px;
@@ -58,7 +56,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 148px 191px 10773px 104px;
+  margin: 148px 191px 0px 104px;
 }
 .hero-wrapper_text {
   display: flex;
@@ -69,23 +67,19 @@
 .hero-wrapper_text h1 {
   color: #1a202c;
 
-  /* Headings/Lite-h1 */
-  /* font-family: Inter; */
   font-size: 45px;
   font-style: normal;
   font-weight: 300;
-  line-height: 71px; /* 157.778% */
+  line-height: 71px;
 }
 .hero-wrapper_text h2 {
   color: var(--gray-gray-900, #1a202c);
 
-  /* Display/Display/Dilplay-h1-bold */
   font-family: Inter;
   font-size: 53px;
   font-style: normal;
   font-weight: 800;
   line-height: 71px;
-  /* gap: 28px; */
 }
 .hero-wrapper_text span {
   background: linear-gradient(180deg, #de4396 0%, rgba(13, 28, 159, 0) 100%);
@@ -130,23 +124,28 @@
   padding: 36px 16px;
 }
 .card {
+  display: flex;
+
   width: 333px;
   height: 287px;
   flex-shrink: 0;
   border-radius: 7px;
   background: #fafafa;
-  /* Card-shadow-lite */
+
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
-.card1 h4 {
+.card h4 {
   width: 271px;
   height: 25px;
   color: var(--gray-gray-800, #2d3748);
 
-  /* Headings/Headings-h4 */
-  font-family: Inter;
+  /* font-family: Inter; */
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 136.523%; /* 27.305px */
+  line-height: 136.523%;
+}
+.card-logo img {
+  border: 1px solid var(--gradient-primary-bg);
+  border-radius: 50%;
 }
