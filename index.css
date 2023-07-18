@@ -5,6 +5,7 @@
   --darker-gray-800: ;
   --lighter-gray-700: #4a5568;
   --lightest-gray-600: #718096;
+  --brand-primary-bg: #57007b;
 }
 /* linear-gradient(#161490, #7476ed, #e56f8c); */
 
@@ -35,11 +36,31 @@ h2 {
 h2 span {
   font-weight: 400;
 }
+h3 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 136.023%;
+}
+
 h4 {
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 136.523%;
+}
+h6 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+}
+button {
+  /* font-family: Inter; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
 }
 .navbar {
   display: flex;
@@ -141,7 +162,7 @@ h4 {
 }
 .Ourservices {
   background: #f9f9ff;
-  max-width: 1440px;
+  max-width: 1140px;
   /* height: 602px; */
   flex-shrink: 0;
   /* align-items: center; */
@@ -156,7 +177,7 @@ h4 {
   font-style: normal;
   font-weight: 700;
   line-height: 55px;
-  margin: auto;
+  margin: 60px 560px;
 }
 .service-card {
   width: 1079px;
@@ -202,24 +223,28 @@ h4 {
 .working-company span {
   font-weight: 400;
 }
+.development-video {
+  position: relative;
+}
+
 .main-image {
   width: 601px;
   height: 460px;
   flex-shrink: 0;
-  /* position: relative; */
 }
 .play-icon {
   width: 58px;
   height: 58px;
-  margin: 201px 270px;
-  /* position: absolute; */
+  /* margin: 201px 270px; */
+  position: absolute;
   top: 50%;
+  left: 50%;
 }
 .development {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 180px;
-  /* position: relative; */
+  justify-content: space-between;
+
+  margin: 185px 100px;
 }
 .development-text p span {
   background: linear-gradient(#f76680, #57007b);
@@ -231,14 +256,25 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+
+  gap: 50px;
   width: 535px;
+  height: 420px;
   padding-top: 20px;
+}
+.main-image {
+  height: 460px;
+  width: 401px;
 }
 .working-company_logo {
   display: inline-flex;
   align-items: flex-start;
   gap: 54px;
+  width: 1441px;
+  height: 202px;
+  flex-shrink: 0;
+  background: #f7f7fa;
+  padding: 60px 62px;
 }
 .btn-left img,
 .btn-right img {
@@ -248,6 +284,8 @@ h4 {
   /* color: #57007b; */
 }
 .working-company {
+  /* text-align: center; */
+  width: 1140px;
 }
 .working-company button {
   display: inline-flex;
@@ -255,14 +293,122 @@ h4 {
 }
 .working-customers {
   margin-top: 124px;
-  max-width: 945px;
+  max-width: 1140px;
 }
 .working-customers h2 {
   text-align: center;
 }
-.rated-images{
+.rated-images {
   display: flex;
-justify-content: center;
-align-items: center;
-gap: 76px;
+  justify-content: center;
+  align-items: center;
+  gap: 76px;
+}
+.case-card img {
+  width: 450px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+.case-card {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  height: 300px;
+  margin: auto;
+  flex-shrink: 0;
+  border-radius: 0px 30px 30px 0px;
+  border: 1px solid var(--shade-primary-lite-bg, #e7daed);
+  background: #f1f2ff;
+}
+.case-card_text {
+  display: flex;
+  flex-direction: column;
+  margin: 66px 52px;
+}
+.case-studies {
+  width: 1140px;
+  /* height: 1px; */
+  background: #f7f7fa;
+  text-align: center;
+  margin: 100px 0;
+  padding: 60px 0;
+}
+/* .case-studies h2 {
+  
+} */
+.btn-btn {
+  display: flex;
+  margin: 20px 81px 20px 1100px;
+}
+.text {
+  text-align: center;
+}
+.read-more_btn {
+  display: flex;
+  flex-direction: column;
+}
+.second-card {
+  background: #f0fff7;
+}
+.third-card {
+  background: #fff4f4;
+}
+.bulding-software {
+  text-align: center;
+}
+.colored-para {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 30px;
+  background: var(
+    --gradient-primary-bg,
+    linear-gradient(225deg, #f76680 0%, #57007b 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+.span-para span {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  background: var(
+    --gradient-primary-bg,
+    linear-gradient(225deg, #f76680 0%, #57007b 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+.colored-para img {
+  height: 15px;
+}
+.software-img img {
+  height: 200px;
+  width: 200px;
+}
+.software-card {
+  display: flex;
+  justify-content: space-between;
+}
+.design-image {
+  border-radius: 10px;
+  /* width: 59px;
+  height: 56px; */
+}
+.design-image1 {
+  background: rgb(71, 70, 70) 50% / cover no-repeat;
+}
+.design-image2 {
+  background: #ff3d9a;
+}
+.design-image3 {
+  background: linear-gradient(#ffef5e, #f7936f);
 }
