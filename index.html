@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
-  </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
   <body>
     <div class="navbar">
       <div class="logo"><img src="./Images/Ik developers.png" /></div>
@@ -30,7 +31,7 @@
       <div class="hero-wrapper_text">
         <div class="hero-wrapper_topic">
           <h1>Great <span>Product</span> is</h1>
-          <h2>built by great <span>teams</span></h2>
+          <h1 class="large-font">built by great <span>teams</span></h1>
         </div>
         <p>
           We help built and manage the team of world-class developers <br />to
@@ -102,16 +103,26 @@
           the sucessful delivery of your project.
         </p>
 
-        <h6>
-          See more information <img src="./Images/arrow-right-line.png" /></h6>
+        <button class="See_more"><span>See More Information</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+          <g clip-path="url(#clip0_171_296)">
+            <path d="M16.172 11.5002L10.808 6.13617L12.222 4.72217L20 12.5002L12.222 20.2782L10.808 18.8642L16.172 13.5002H4V11.5002H16.172Z" fill="#57007B"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_171_296">
+              <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+            </clipPath>
+          </defs>
+        </svg> 
+      </button>
         
       </div>
       <div class="development-video ">
         <!-- <img class="main-image" src="./Images/Rectangle 9.png" />
         <img class="play-icon" src="./Images/play-circle-fill.png" /> -->
         <video width="320" height="420" controls>
-          <source src="movie.mp4" type="video/mp4">
-          <source src="movie.ogg" type="video/ogg">
+          <source src="./Video/countdown_-_2637 (540p).mp4" type="video/mp4">
+          <!-- <source src="movie.ogg" type="video/ogg"> -->
        
         </video>
       </div>
@@ -132,17 +143,20 @@
         <img src="./Images/logo8.png" />
         <img src="./Images/Logo-9.png" />
         <img src="./Images/logo5.png" />
-        <!-- <img src="./Images/logo9.png" /> -->
+        <img src="./Images/logo9.png" />
       </div>
     </section>
     <section class="working-customers container">
+      
       <div class="text">
         <img src="./Images/Deco-line.png"/>
         <h2>
           <span>Why customers love</span><br />
           working with us.
         </h2>
-        
+        <div class="rated-image_slider">
+          <button class="sliding-left_btn"><img src="./Images/Btn-left.png"/></button>
+          <div class="working-customer-card">
         <p>
           <img class="upper-comma" src="./Images/fluent_comma-24-regular.png" />
           Without any doubt I recommend Veda as one of the best web design and
@@ -154,14 +168,86 @@
         />
         </p>
         
+      
+      
+      <div class="rated-cards">
+        <div class="rated-card rated-card1">
+        <img src="./Images/Group 2 (4).png" />
+        <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span></>
+          <p>Romeena De Silva</p>
+        </div>
+        <div class="rated-card rated-card1">
+        <img src="./Images/Group 2 (3).png" />
+        <p><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span></p>
+          <p>Romeena De Silva</p>
       </div>
-      <div class="rated-images">
-        <img src="./Images/Rated-person.png" />
-        <img src="./Images/Rated-person (1).png" />
-        <img src="./Images/Rated-person (3).png" />
-        <img src="./Images/Rated-person (2).png" />
-        <img src="./Images/Rated-person (4).png" />
+        <div class="rated-card rated-card1">
+        <img src="./Images/Group 2 (2).png" />
+        <p><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span></p>
+          <p>Romeena De Silva</p>
       </div>
+        <div class="rated-card rated-card1">
+        <img src="./Images/Group 2 (3).png" />
+        <p><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span></p>
+          <p>Romeena De Silva</p>
+      </div>
+        <div class="rated-card rated-card1">
+        <img src="./Images/Group 2 (4).png" />
+        <p><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span></p>
+          <p>Romeena De Silva</p>
+      </div>
+      <div class="rated-card rated-card1">
+        <img src="./Images/Group 2 (4).png" />
+        <p><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span></p>
+          <p>Romeena De Silva</p>
+        </div>
+        <div class="rated-card rated-card1">
+          <img src="./Images/Group 2 (4).png" />
+          <p><span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span></p>
+            <p>Romeena De Silva</p>
+      </div>
+
+    </div>
+    </div>
+      <button class="sliding-right_btn"><img src="./Images/button-right.png"/></button>
+      
+    </div>
+    <div class="carousel_page">
+      <div class="carousel_pagination"></div>
+      <div class="carousel_pagination"></div>
+      <div class="carousel_pagination"></div>
+      <div class="carousel_pagination"></div>
+      <div class="carousel_pagination"></div>
+
+    </div>
     </section>
     <section class="case-studies container">
       <img src="./Images/Deco-line.png"/>
@@ -178,7 +264,20 @@
           nesciunt quasi non dignissimos ducimus impedit commodi sint facere
           tempora provident possimus!
         </p>
-        <button>Read More &gt;</button>
+        <button class="case-btn"><span>Read More</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <g clip-path="url(#clip0_1_580)">
+          <path d="M8.78132 7.99999L5.48132 4.69999L6.42399 3.75732L10.6667 7.99999L6.42399 12.2427L5.48132 11.3L8.78132 7.99999Z" fill="url(#paint0_linear_1_580)"/>
+          </g>
+          <defs>
+          <linearGradient id="paint0_linear_1_580" x1="10.6667" y1="3.75732" x2="3.11576" y2="8.37163" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#F76680"/>
+          <stop offset="1" stop-color="#57007B"/>
+          </linearGradient>
+          <clipPath id="clip0_1_580">
+          <rect width="16" height="16" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg></button>
       </div>
       </div>
       <div class="second-card case-card">
@@ -193,7 +292,20 @@
           nesciunt quasi non dignissimos ducimus impedit commodi sint facere
           tempora provident possimus!
         </p>
-        <button>Read More &gt;</button>
+        <button class="case-btn"><span>Read More</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <g clip-path="url(#clip0_1_580)">
+          <path d="M8.78132 7.99999L5.48132 4.69999L6.42399 3.75732L10.6667 7.99999L6.42399 12.2427L5.48132 11.3L8.78132 7.99999Z" fill="url(#paint0_linear_1_580)"/>
+          </g>
+          <defs>
+          <linearGradient id="paint0_linear_1_580" x1="10.6667" y1="3.75732" x2="3.11576" y2="8.37163" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#F76680"/>
+          <stop offset="1" stop-color="#57007B"/>
+          </linearGradient>
+          <clipPath id="clip0_1_580">
+          <rect width="16" height="16" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg></button>
       </div>
       </div>
       <div class="third-card case-card">
@@ -208,9 +320,22 @@
           nesciunt quasi non dignissimos ducimus impedit commodi sint facere
           tempora provident possimus!
         </p>
-        <button>Read More &gt;</button>
+        <button class="case-btn"><span>Read More</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <g clip-path="url(#clip0_1_580)">
+          <path d="M8.78132 7.99999L5.48132 4.69999L6.42399 3.75732L10.6667 7.99999L6.42399 12.2427L5.48132 11.3L8.78132 7.99999Z" fill="url(#paint0_linear_1_580)"/>
+          </g>
+          <defs>
+          <linearGradient id="paint0_linear_1_580" x1="10.6667" y1="3.75732" x2="3.11576" y2="8.37163" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#F76680"/>
+          <stop offset="1" stop-color="#57007B"/>
+          </linearGradient>
+          <clipPath id="clip0_1_580">
+          <rect width="16" height="16" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg></button>
       </div>
-      <button class="read-more_btn">Read more case studies &gt;</button>
+      <!-- <button class="read-more_btn">Read more case studies &gt;</button> -->
     </section>
     <section class="bulding-software container">
       <img src="./Images/Deco-line.png"/>
@@ -221,7 +346,10 @@
         <p class="normal-para">Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers)</p>
         <p class="span-para">Our <span>delivery model</span> helps you cut costs and deliver within budget.</p>
         <p class="colored-para"><img src="./Images/Rectangle 20.png"/>"Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"</p>
-       <!-- <img src="./Images/Ellipse 185.png"/> -->
+       <div class="ellipse-flex">
+        <img src="./Images/Ellipse 185.png"/>
+        <p>Jeewa markram <span>CEO</span></p>
+      </div>
       </div>
         <img class="software-img" src="./Images/Rectangle 17.png"/>
       </div>
@@ -232,6 +360,10 @@
         <p class="span-para">Our<span> delivery model </span>helps you cut costs and deliver within budget.</p>
         <p class="colored-para"><img src="./Images/Rectangle 20.png"/>"Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"</p>
         <!-- <img src="./Images/Ellipse 185.png"/> -->
+        <div class="ellipse-flex">
+          <img src="./Images/Ellipse 185.png"/>
+          <p>Jeewa markram <span>CEO</span></p>
+        </div>
       </div>
         <img class="software-img" src="./Images/Rectangle 18.png"/>
       </div>
@@ -242,6 +374,11 @@
         <p class="span-para">Our <span>delivery model</span> helps you cut costs and deliver within budget.</p>
         <p class="colored-para"><img src="./Images/Rectangle 20.png"/>"Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"</p>
         <!-- <img src="./Images/Ellipse 185.png"/> -->
+        <div class="ellipse-flex">
+          <img src="./Images/Ellipse 185 (2).png"/>
+          <p>Jeewa markram </p>
+          <p>CEO</p>
+        </div>
       </div>
         <img class="software-img" src="./Images/Rectangle 19.png"/>
       </div>
@@ -341,32 +478,43 @@
         <div class="flow-card flow-card1">
           <h5><span>#1</span>Assemble the right team</h5>
           <p>We handle all aspects of vetting and choosing the right team that you don't have the time, expertise, or desire to do.</p>
+          <img src="./Images/Line 6.png"/>
         </div>
         
         <div class="flow-card flow-card2">
           <h5><span>#3</span>Tech architecture</h5>
           <p>We break monolithic apps into microservices. Decoupling the code allows teams to move faster and more independently</p>
+          <img src="./Images/Line 6.png"/>
         </div>
        <div class="flow-card flow-card3">
         <h5><span>#5</span>Code reviews</h5>
         <p>Code reviews before release help detect issues like memory leaks, file leaks, performance signs, and general bad smells</p>
-       </div>
+        <img src="./Images/Line 6.png"/>
+      </div>
 
 
       </div>
+      <img src="./Images/Line 5.png">
       <div class="flow-cards_even">
-        <div class="flow-card flow-card4"></div>
+        <div class="flow-card flow-card4">
+          <img src="./Images/Line 6.png"/>
           <h5><span>#2</span>Sprint planning</h5>
+          
           <p>Sprint roadmap is a collective planning effort. Team members collaborate to clarify items and ensure shared understanding.</p>
+          
         </div>
         <div class="flow-card flow-card5">
+          <img src="./Images/Line 6.png"/>
          <h5><span>#4</span>Standups & weekly demos</h5>
          <p>Standups, weekly demos, and weekly reviews make sure everyone is on the same page and can raise their concerns.</p>
+         
         </div>
         <div class="flow-card flow-card6">
+          <img src="./Images/Line 6.png"/>
         <h5><span>#6</span>Iterative delivery</h5>
         <p>We divide the implementation process into several checkpoints rather than a single deadline.</p>
-        </div>
+        
+      </div>
         </div>
 
     </section>
@@ -374,17 +522,92 @@
       <img src="./Images/Deco-line.png"/>
       <h2><span>Featured</span><br>Resources</h2>
       <div class="resource-slider">
-        <img src="./Images/Blog-post.png"/>
-        <img src="./Images/Blog-post (1).png"/>
-        <img src="./Images/Blog-post (2).png"/>
-        <img src="./Images/Blog-post (3).png"/>
-        <img src="./Images/Blog-post (4).png"/>
+        <div class=" feature-card  feature-card1">
+        <img src="./Images/Rectangle 10 (5).png"/>
+        <p>How to Build a Scalable Application up to 1 Million Users on AWS</p>
+        <button class="read_more"><span>Read more</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+          <g clip-path="url(#clip0_171_296)">
+            <path d="M16.172 11.5002L10.808 6.13617L12.222 4.72217L20 12.5002L12.222 20.2782L10.808 18.8642L16.172 13.5002H4V11.5002H16.172Z" fill="#57007B"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_171_296">
+              <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+            </clipPath>
+          </defs>
+        </svg> 
+      </button>
+        </div>
+        <div class="feature-card feature-card2">
+        <img src="./Images/Rectangle 10 (1).png"/>
+        <p>How to Build a Scalable Application up to 1 Million Users on AWS</p>
+        <button class="read_more"><span>Read more</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+          <g clip-path="url(#clip0_171_296)">
+            <path d="M16.172 11.5002L10.808 6.13617L12.222 4.72217L20 12.5002L12.222 20.2782L10.808 18.8642L16.172 13.5002H4V11.5002H16.172Z" fill="#57007B"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_171_296">
+              <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+            </clipPath>
+          </defs>
+        </svg> </button>
+      </div>
+      <div class="feature-card feature-card3">
+        <img src="./Images/Rectangle 10 (2).png"/>
+        <p>How to Build a Scalable Application up to 1 Million Users on AWS</p>
+        <button class="read_more"><span>Read more</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+          <g clip-path="url(#clip0_171_296)">
+            <path d="M16.172 11.5002L10.808 6.13617L12.222 4.72217L20 12.5002L12.222 20.2782L10.808 18.8642L16.172 13.5002H4V11.5002H16.172Z" fill="#57007B"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_171_296">
+              <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+            </clipPath>
+          </defs>
+        </svg> </button>
+      </div>
+      <div class="feature-card feature-card4">
+        <img src="./Images/Rectangle 10 (3).png"/>
+        <p>How to Build a Scalable Application up to 1 Million Users on AWS</p>
+        <button class="read_more"><span>Read more</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+          <g clip-path="url(#clip0_171_296)">
+            <path d="M16.172 11.5002L10.808 6.13617L12.222 4.72217L20 12.5002L12.222 20.2782L10.808 18.8642L16.172 13.5002H4V11.5002H16.172Z" fill="#57007B"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_171_296">
+              <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+            </clipPath>
+          </defs>
+        </svg> </button>
+      </div>
+      <div class="feature-card feature-card5">
+        <img src="./Images/Rectangle 10 (4).png"/>
+        <p>How to Build a Scalable Application up to 1 Million Users on AWS</p>
+        <button class="read_more"><span>Read more</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+          <g clip-path="url(#clip0_171_296)">
+            <path d="M16.172 11.5002L10.808 6.13617L12.222 4.72217L20 12.5002L12.222 20.2782L10.808 18.8642L16.172 13.5002H4V11.5002H16.172Z" fill="#57007B"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_171_296">
+              <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+            </clipPath>
+          </defs>
+        </svg> </button>
+      </div>
 
       </div>
       
     </section>
 
     <section class="hire-developers">
+      <h2>Hire the best developers and designers around!</h2>
+      <!-- <img src="./Images/Rectangle 29.png"> -->
+      <div class="hire-images">
+        <img class="hire-img1" src="./Images/Group 40.png">
+        <!-- <img class="hire-img2" src="./Images/Nav-button.png"/> -->
+        <button class="hire-btn">Hire Top Developers</button>
+      </div>
+
 
     </section>
     <section class=" footer container">
@@ -421,9 +644,11 @@
 
 
     </section>
-    <footer>
     <hr>
+    <footer>
+    
     <p>© 2023 Copyright by IK Developers. All rights reserved.</p>
   </footer>
+  <script src="./index.js"></script>
   </body>
 </html>

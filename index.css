@@ -16,7 +16,7 @@
 }
 body {
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .container {
   margin: 100px;
@@ -126,11 +126,17 @@ button {
   align-items: center;
   margin: 148px 191px 0px 104px;
 }
+.hero-wrapper_image img {
+  height: 800px;
+  width: 600px;
+}
 .hero-wrapper_text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 28px;
+  width: 500px;
+  height: 400px;
 }
 .hero-wrapper_text h1 {
   color: #1a202c;
@@ -139,6 +145,9 @@ button {
   font-style: normal;
   font-weight: 300;
   line-height: 71px;
+}
+.large-font {
+  font-weight: 800;
 }
 .hero-wrapper_text h2 {
   color: var(--gray-gray-900, #1a202c);
@@ -188,14 +197,14 @@ button {
 }
 .Ourservices h2 {
   color: var(--gray-gray-900, #1a202c);
-  width: 308px;
+
   height: 41px;
   font-family: Inter;
   font-size: 35px;
   font-style: normal;
   font-weight: 700;
   line-height: 55px;
-  margin: 60px 560px;
+  text-align: center;
 }
 .service-card {
   width: 1079px;
@@ -264,7 +273,10 @@ button {
 
   margin: 185px 100px;
 }
-.development-text p span {
+.development-text p span,
+.read_more span,
+.See_more span,
+.case-btn span {
   background: linear-gradient(#f76680, #57007b);
   background-clip: text;
   -webkit-background-clip: text;
@@ -312,6 +324,19 @@ button {
 .working-customers {
   margin-top: 124px;
   max-width: 1140px;
+  /* display:flex; */
+}
+.rated-image_slider {
+  display: flex;
+}
+.sliding-right_btn,
+.sliding-left_btn {
+  background: transparent;
+  border: none;
+}
+.working-customer-card {
+  display: flex;
+  flex-direction: column;
 }
 .working-customers h2 {
   text-align: center;
@@ -344,13 +369,21 @@ button {
   flex-direction: column;
   margin: 66px 52px;
 }
+.case-card_text button {
+  background: transparent;
+  border: none;
+  margin-left: 200px;
+  /* width: 70px; */
+}
 .case-studies {
+  /* display: flex;
+  flex-direction: column; */
   width: 1140px;
   /* height: 1px; */
   background: #f7f7fa;
   text-align: center;
-  margin: 100px 0;
-  padding: 60px 0;
+  /* margin: 100px 0;
+  padding: 60px 0; */
 }
 /* .case-studies h2 {
   
@@ -416,7 +449,10 @@ button {
   display: flex;
   justify-content: space-between;
   margin-top: 95px;
-  /* gap: 95px; */
+  gap: 95px;
+}
+.ellipse-flex {
+  display: flex;
 }
 .soft-card2 {
   display: flex;
@@ -441,6 +477,7 @@ button {
 .design-image2 {
   background: #ff3d9a;
 }
+
 .design-image3 {
   background: linear-gradient(#ffef5e, #f7936f);
 }
@@ -485,7 +522,7 @@ button {
   gap: 87px;
   margin-top: 100px;
 }
-.footer p {
+footer p {
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -501,4 +538,61 @@ button {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.flow-card,
+.rated-card {
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.flow-cards_odd,
+.flow-cards_even {
+  display: flex;
+  gap: 20px;
+}
+.hire-developers {
+  display: flex;
+  margin: 100px 0;
+}
+.hire-images {
+  position: relative;
+}
+.hire-image1 {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+}
+.hire-btn {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(225deg, #ffc656 0%, #f16063 100%);
+  width: 200px;
+  height: 50px;
+}
+.read_more,
+.See_more,
+.case-btn {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding-left: 100px;
+}
+.rated-cards {
+  display: flex;
+  overflow-x: hidden;
+  
+}
+.rated-card {
+  text-align: center;
+  margin: 20px;
+}
+.rated-card p {
+  color: #a0aec0;
+}
+.checked {
+  color: orange;
 }
