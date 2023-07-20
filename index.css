@@ -39,7 +39,7 @@ h2 {
   font-style: normal;
   font-weight: 700;
   line-height: 55px;
-  margin: 50px;
+  margin-bottom: 50px;
 }
 h2 span {
   font-weight: 400;
@@ -124,7 +124,7 @@ button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 148px 191px 0px 104px;
+  /* margin: 148px 191px 0px 104px; */
 }
 .hero-wrapper_image img {
   height: 800px;
@@ -481,6 +481,9 @@ button {
 .design-image3 {
   background: linear-gradient(#ffef5e, #f7936f);
 }
+/* .design-develope h2 {
+  margin-bottom: 50px;
+} */
 .design-develope,
 .development-flow,
 .tech-stack,
@@ -550,7 +553,11 @@ footer p {
 }
 .hire-developers {
   display: flex;
+  justify-content: space-between;
   margin: 100px 0;
+}
+.hire-developers h2 {
+  margin: 50px ;
 }
 .hire-images {
   position: relative;
@@ -584,7 +591,6 @@ footer p {
 .rated-cards {
   display: flex;
   overflow-x: hidden;
-  
 }
 .rated-card {
   text-align: center;
@@ -595,4 +601,7 @@ footer p {
 }
 .checked {
   color: orange;
+}
+.software-text h3 {
+  margin: 30px;
 }
