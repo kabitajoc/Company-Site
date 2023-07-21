@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,9 +16,9 @@
 .item {
   position: relative;
   display: flex;
-  gap: 40px;
+  gap: 40px; */
   /* height: 300px; */
-}
+/* } */
 /* .text {
   position: absolute;
   top: 50%;
@@ -26,8 +26,8 @@
   transform: translate(-50%, -50%);
 } */
 
-.btn-area {
+/* .btn-area {
   position: absolute;
-  bottom: -25px;
+  bottom: -25px; */
   /* left: 50%; */
-}
+/* } */
