@@ -774,16 +774,16 @@ footer p {
   .hamburger {
     display: block;
   }
-  .container{
-    max-width:500px;
-    margin :auto;
+  .container {
+    max-width: 500px;
+    margin: auto;
   }
   /* .logo img {
     display: none;
   } */
-  .hire-developers{
+  /* .hire-developers{
 
-  }
+  } */
   .nav {
     display: none;
   }

@@ -36,14 +36,21 @@
                           <img src="./Images/Rectangle 10 (4).png" />
                         </div>
                         </div>
-                        <!-- <div class="image1"> -->
-                          <!-- <img src="./Images/Rectangle 10 (3).png" />
+                        <div class="item">
+                        <div class="image1">
+                          <img src="./Images/Rectangle 10 (3).png" />
                         </div>
+                      </div>
+                      <div class="item">
                         <div class="image1">
                           <img src="./Images/Rectangle 10 (2).png" />
+                          </div>
+                          </div>
+                          <div class="item">
                           <div class="image1">
                             <img src="./Images/Rectangle 10 (5).png" />
-                          </div> -->
+                          </div>
+                          </div>
                           <div class="item">
                             <div class="image1">
                               <img src="./Images/Rectangle 10 (1).png" />
@@ -51,10 +58,8 @@
                         </div>
                         
                         
-                          <img src="./Images/Rectangle 10 (5).png" />
-                        
-                      </div>
-            </div>
+                          
+            
 
           </div>
           <div class="btn-area">
@@ -72,6 +77,11 @@
       var item= document.getElementsByClassName("item")
       function next(){
         sliderMain.append(item[0])
+      }
+
+      function prev(){
+        // sliderMain.push(item(len-1))
+        sliderMain.prepend(item(len-1))
       }
     </script>
     
