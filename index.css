@@ -22,7 +22,7 @@ body {
   /* margin: 50px 0px; */
   max-width: 1440px;
   width: 100%;
-  margin: 50px auto;
+  margin: 100px auto;
 }
 /* section {
   margin: 50px ;
@@ -34,7 +34,7 @@ p {
   font-weight: 400;
   line-height: 162.023%;
   color: #4a5568;
-  margin: 20px;
+  /* margin: 20px; */
 }
 h1 {
   font-size: 45px;
@@ -47,7 +47,7 @@ h2 {
   font-style: normal;
   font-weight: 700;
   line-height: 55px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   color: #1a202c;
 }
 h2 span {
@@ -65,7 +65,7 @@ h4 {
   font-style: normal;
   font-weight: 600;
   line-height: 136.523%;
-  margin: 20px;
+  /* margin: 20px; */
 }
 h5 {
   font-family: Inter;
@@ -88,6 +88,9 @@ button {
   font-style: normal;
   font-weight: 600;
   line-height: 14px;
+}
+.hamburger {
+  display: none;
 }
 .navbar {
   display: flex;
@@ -136,7 +139,8 @@ button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  max-width: 1140px;
+  width: 100%;
+  /* max-width: 1140px; */
   /* margin: 0 auto; */
 }
 .hero-wrapper_image img {
@@ -205,12 +209,12 @@ button {
 }
 .Ourservices {
   background: #f9f9ff;
-  max-width: 1140px;
+  /* max-width: 1140px; */
   flex-wrap: wrap;
   /* height: 602px; */
   flex-shrink: 0;
   /* align-items: center; */
-  margin: auto;
+  /* margin: auto; */
 }
 .Ourservices h2 {
   color: var(--gray-gray-900, #1a202c);
@@ -226,7 +230,7 @@ button {
 .service-card {
   display: flex;
   gap: 60px;
-  max-width: 1079px;
+  /* max-width: 1079px; */
   /* max-height: 326px; */
   flex-shrink: 0;
   /* gap:40; */
@@ -248,11 +252,11 @@ button {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
-  margin: 38.5px 16px;
+  /* gap: 20px; */
+  /* margin: 38.5px 16px; */
 }
 .card h4 {
-  width: 271px;
+  width: 333px;
   height: 25px;
   color: #2d3748;
 
@@ -269,9 +273,9 @@ button {
 .working-company span {
   font-weight: 400;
 }
-.development-video {
+/* .development-video {
   position: relative;
-}
+} */
 
 .main-image {
   width: 601px;
@@ -288,9 +292,9 @@ button {
 }
 .development {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
-  margin: 185px 100px;
+  /* margin: 185px 100px; */
 }
 .development-text p span,
 .read_more span,
@@ -389,8 +393,9 @@ button {
   text-align: center;
   /* max-width: 900px; */
   width: 100%;
-
+  /* height: 450px; */
   /* margin: auto; */
+  align-items: center;
   flex-shrink: 0;
   border-radius: 0px 30px 30px 0px;
   border: 1px solid var(--shade-primary-lite-bg, #e7daed);
@@ -439,7 +444,7 @@ button {
 }
 .text {
   text-align: center;
-  max-width: 800px;
+  /* max-width: 800px; */
 }
 .read-more_btn {
   display: flex;
@@ -648,6 +653,7 @@ footer p {
 }
 .rated-cards {
   display: flex;
+  flex-wrap: wrap;
   overflow-x: hidden;
 }
 .rated-card {
@@ -678,12 +684,21 @@ footer p {
   .feature-card img {
     width: 150px;
   }
+  .service-card {
+    display: flex;
+    gap: 20px;
+  }
   .resource-slider {
+    width: 100%;
+    max-width: 1140;
     display: flex;
     gap: 30px;
   }
   .container {
-    margin: 30px;
+    max-width: 1200px;
+    margin: auto;
+
+    /* margin: 30px; */
   }
   .working-company_logo {
     /* max-width: 900px;
@@ -707,6 +722,10 @@ footer p {
   }
 }
 @media (max-width: 992px) {
+  .container {
+    max-width: 992px;
+    margin: auto;
+  }
   .btn-btn {
     display: flex;
     justify-content: center;
@@ -746,8 +765,29 @@ footer p {
   .ellipse-flex {
     display: none;
   }
+  .software-text {
+    max-width: 992px;
+    margin: auto;
+  }
 }
 @media (max-width: 576px) {
+  .hamburger {
+    display: block;
+  }
+  .container{
+    max-width:500px;
+    margin :auto;
+  }
+  /* .logo img {
+    display: none;
+  } */
+  .hire-developers{
+
+  }
+  .nav {
+    display: none;
+  }
+
   .hero-wrapper_image img {
     display: none;
   }
@@ -780,22 +820,23 @@ footer p {
   .tech-stack {
     max-width: 400px;
   }
-  .case-btn {
-    /* margin-right: 100px; */
-    /* padding: auto; */
-  }
+  /* .case-btn {
+ 
+  } */
   .hire-developers,
   .case-card,
   .design-develope_flex {
     display: flex;
     flex-direction: column;
   }
-  .hire-img1 {
+  .hire-img1,
+  .case-btn {
     display: none;
   }
-  .hire-developers {
-    /* margin:20px; */
-  }
+
+  /* .hire-developers {
+   
+  } */
   /* .hire-btn {
     height: 25px;
     width: 100px; */
