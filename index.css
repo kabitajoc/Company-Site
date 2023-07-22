@@ -778,12 +778,7 @@ footer p {
     max-width: 500px;
     margin: auto;
   }
-  /* .logo img {
-    display: none;
-  } */
-  /* .hire-developers{
 
-  } */
   .nav {
     display: none;
   }
@@ -820,9 +815,7 @@ footer p {
   .tech-stack {
     max-width: 400px;
   }
-  /* .case-btn {
- 
-  } */
+
   .hire-developers,
   .case-card,
   .design-develope_flex {
@@ -834,10 +827,5 @@ footer p {
     display: none;
   }
 
-  /* .hire-developers {
-   
-  } */
-  /* .hire-btn {
-    height: 25px;
-    width: 100px; */
+ 
 }
