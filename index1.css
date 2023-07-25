@@ -1,33 +1,40 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.slider-wrap {
+.carousel-container {
   position: relative;
   overflow: hidden;
-  height: 220px;
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the carousel */
 }
-.slider-main {
-  position: absolute;
-  width: 150%;
-}
-.item {
-  position: relative;
+
+.carousel {
   display: flex;
-  gap: 40px; */
-  /* height: 300px; */
-/* } */
-/* .text {
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  display: flex;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  margin-right: 10px; /* Add some spacing between images */
+}
+
+.prev-btn,
+.next-btn {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
+  transform: translateY(-50%);
+  padding: 10px;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+}
 
-/* .btn-area {
-  position: absolute;
-  bottom: -25px; */
-  /* left: 50%; */
-/* } */
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}

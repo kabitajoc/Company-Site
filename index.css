@@ -20,9 +20,9 @@ body {
 }
 .container {
   /* margin: 50px 0px; */
-  max-width: 1440px;
+  max-width: 1140px;
   width: 100%;
-  margin: 100px auto;
+  margin: auto;
 }
 /* section {
   margin: 50px ;
@@ -321,7 +321,7 @@ button {
 }
 .working-company_logo {
   display: inline-flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-evenly;
   align-items: flex-start;
   gap: 54px;
@@ -331,6 +331,14 @@ button {
   flex-shrink: 0;
   background: #f7f7fa;
   padding: 60px 62px;
+}
+
+.slider-container,
+.working-customer_container,
+.sliding-container {
+  width: 700px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 .line img {
   width: 100%;
@@ -346,6 +354,7 @@ button {
 .working-company {
   /* text-align: center; */
   max-width: 1140px;
+  margin: auto;
   /* max-width: 1140px; */
 }
 .working-company button {
@@ -353,12 +362,15 @@ button {
   align-items: flex-end;
 }
 .working-customers {
-  margin-top: 124px;
+  margin: 124px auto;
   max-width: 1140px;
   /* display:flex; */
 }
 .rated-image_slider {
   display: flex;
+  /* max-width: 1140px;
+  margin: auto; */
+
   /* justify-content: space-between; */
   align-items: center;
 }
@@ -371,6 +383,7 @@ button {
 .working-customer-card {
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
 }
 .working-customers h2 {
   text-align: center;
@@ -413,8 +426,14 @@ button {
 .case-card_text button {
   background: transparent;
   border: none;
-  margin-left: 200px;
+
+  /* margin-left: 200px; */
   /* width: 70px; */
+}
+.case-btn {
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
 }
 .case-studies {
   /* display: flex;
@@ -444,7 +463,7 @@ button {
 }
 .text {
   text-align: center;
-  /* max-width: 800px; */
+  width: 100%;
 }
 .read-more_btn {
   display: flex;
@@ -545,6 +564,10 @@ button {
 .stack-nav {
   text-align: center;
 }
+.resources {
+  max-width: 1140px;
+  margin: auto;
+}
 .tech-stack {
   width: 100%;
   max-width: 1000px;
@@ -576,13 +599,17 @@ button {
 }
 .resource-slider {
   display: flex;
-  /* gap: 60px; */
+  gap: 20px;
   width: 100%;
   max-width: 1140px;
+
+  /* display: flex; */
+  transition: transform 0.3s ease-in-out;
 }
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   gap: 87px;
   margin-top: 100px;
 }
@@ -615,7 +642,7 @@ footer p {
 .hire-developers {
   display: flex;
   justify-content: space-around;
-  margin: 100px 0;
+  margin: 100px auto;
   border-radius: 20px;
   background: linear-gradient(225deg, #f1f1f5 0%, #e4ecf7 100%);
 }
@@ -644,21 +671,24 @@ footer p {
 .See_more,
 .case-btn {
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
+  /* align-items: center; */
   height: 25px;
   width: 100%;
   border: none;
   background: transparent;
-  padding-left: 100px;
+
+  /* padding-left: 100px; */
 }
 .rated-cards {
   display: flex;
-  flex-wrap: wrap;
-  overflow-x: hidden;
+  width: 150px;
+  /* flex-wrap: wrap; */
+  /* overflow-x: hidden; */
 }
 .rated-card {
   text-align: center;
-  margin: 20px;
+  /* margin: 20px; */
 }
 .rated-card p {
   color: #a0aec0;
@@ -679,10 +709,23 @@ footer p {
   border-radius: 50px;
   box-shadow: 0px 4px 40px 0px #0000001a;
 }
+.feature-card img {
+  width: 200px;
+}
 
 @media (max-width: 1200px) {
   .feature-card img {
     width: 150px;
+  }
+  /* .card{
+    display: flex;
+    gap:30px;
+    max-width:200px;
+  } */
+  .rated-image_slider,
+  .working-company {
+    max-width: 1200px;
+    margin: auto;
   }
   .service-card {
     display: flex;
@@ -696,7 +739,7 @@ footer p {
   }
   .container {
     max-width: 1200px;
-    margin: auto;
+    margin: 100px auto;
 
     /* margin: 30px; */
   }
@@ -704,6 +747,8 @@ footer p {
     /* max-width: 900px;
     width: 100%; */
     /* gap: 30px; */
+    display: flex;
+    transition: transform 0.3s ease-in-out;
     padding: 0px;
   }
 
@@ -735,13 +780,19 @@ footer p {
     height: 300px;
     width: 250px;
   }
+  /* .working-customer-card , */
+  .rated-image_slider,
+  .working-company {
+    max-width: 800px;
+    margin: auto;
+  }
   .service-card,
   .stack-nav ul,
   .four-backend-icon,
   .five-bakend_icon,
   .resource-slider,
-  .footer,
-  .working-company_logo {
+  .footer 
+  /* .working-company_logo  */ {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -774,9 +825,17 @@ footer p {
   .hamburger {
     display: block;
   }
-  .container {
+  .container,
+  .development-text,
+  .rated-image_slider,
+  .working-company,
+  .working-company_logo {
     max-width: 500px;
     margin: auto;
+  }
+  .read_more {
+    display: flex;
+    justify-content: center;
   }
 
   .nav {
@@ -821,11 +880,13 @@ footer p {
   .design-develope_flex {
     display: flex;
     flex-direction: column;
+    /* max-height: 600px; */
+  }
+  .hire-developers {
+    max-height: 600px;
   }
   .hire-img1,
   .case-btn {
     display: none;
   }
-
- 
 }
